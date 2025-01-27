@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search-cont{
+    margin-bottom: 20px;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-box{
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    border: 2px solid #DADADA;
+    outline: none;
+    font-size: 1em;
+    font-family: "Poppins", serif;
+    color: #393939;
+}
+
+#search-box:focus{
+    border: 2px solid #FF9000;
+}
+
+#search-btn{
+    background-color: #FF9000;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#search-btn i{
+    font-size: 25px;
+}
+
+#search-btn:hover{
+    background-color: #ffab3c;
+}
+
+#error-message{
+    font-family: 'Poppins', serif;
+    color: tomato;
+    display: none;
+    margin-top: 5px;
+}
+
+#weather-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+#main-weather #temp{
+    font-size: 3em;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    color: #393939;
+    text-align: center;
+}
+
+#image-cont img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#vertical-div{
+    border-left: 3px solid #DADADA;
+    border-radius: 50px;
+    height: 200px;
+}
+
+#info-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#city-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#description{
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #393939;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#city-cont #city{
+    font-family: "Poppins", serif;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.sunny-city{
+    background-image: linear-gradient(to right, #FF9000, #FFC376);
+    background-clip: text;
+    color: transparent;
+}
+
+.rainy-city{
+    background-image: linear-gradient(to right, #75BDF7, #B3DAFB);
+    background-clip: text;
+    color: transparent;
+}
+
+.thunder-city{
+    background-image: linear-gradient(to right, #40344F, #59586E);
+    background-clip: text;
+    color: transparent;
+}
+
+.snowy-city{
+    background-image: linear-gradient(to right, #B3DAFB, #FFFFFF);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #75BDF7;
+}
+
+#horizontal-div{
+    border-top: 3px solid #DADADA;
+    width: 300px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#info-cont{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    color: #393939;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.info .title{
+    color: #80cdf6;
+    font-weight: 400;
+    text-align: center;
+}
+
+.info i{
+    font-size: 25px;
+}
+
+

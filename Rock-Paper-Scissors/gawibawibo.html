@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc53451b7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="title-cont">
+            <p>
+                Rock Paper Scissors
+                <span>
+                    by LonianTech
+                </span>
+            </p>
+        </div>
+
+        <div id="game-cont">
+            <div id="computer-score-cont">
+                <h1 id="computer-score">
+                    00
+                </h1>
+                <i class="fa-solid fa-robot" style="color: #ffffff;"></i>
+            </div>
+
+            <div id="computer-pick-cont">
+                <i id="computer-pick" class="fa-solid fa-flip-horizontal" style="color: #393939;"></i>
+            </div>
+
+            <div id="result-cont">
+                <h1 id="result">You Lose!</h1>
+                <button id="againBtn">Rematch</button>
+            </div>
+
+            <div id="user-pick-cont">
+                <i id="user-pick" class="fa-solid" style="color: #393939;"></i>
+            </div>
+
+            <div id="user-score-cont">
+                <i class="fa-solid fa-user" style="color: #393939;"></i>
+                <h1 id="user-score">
+                    00
+                </h1>
+            </div>
+        </div>
+
+        <div id="hands-cont">
+            <div id="instruction">
+                <p>Choose Your Hand!</p>
+            </div>
+            <div id="controls">
+                <button id="rock" class="hands hover">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </button>
+                <button id="paper" class="hands hover">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <button id="scissors" class="hands hover">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

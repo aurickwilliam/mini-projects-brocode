@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc53451b7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="calculator">
+            <div id="display-cont">
+                <input type="text" id="display" value="0" readonly>
+            </div>
+            <button class="functions" onclick="clearDisplay()">C</button>
+            <button class="functions" onclick="appendToDisplay('00')">00</button>
+            <button class="functions" onclick="popDisplay()">
+                <i class="fa-solid fa-delete-left" style="color: #393939;"></i>
+            </button>
+            <button class="operators" onclick="appendToDisplay('+')">÷</button>
+            <button class="numbers" onclick="appendToDisplay('9')">9</button>
+            <button class="numbers" onclick="appendToDisplay('8')">8</button>
+            <button class="numbers" onclick="appendToDisplay('7')">7</button>
+            <button class="operators" onclick="appendToDisplay('*')">×</button>
+            <button class="numbers" onclick="appendToDisplay('6')">6</button>
+            <button class="numbers" onclick="appendToDisplay('5')">5</button>
+            <button class="numbers" onclick="appendToDisplay('4')">4</button>
+            <button class="operators" onclick="appendToDisplay('-')">−</button>
+            <button class="numbers" onclick="appendToDisplay('1')">1</button>
+            <button class="numbers" onclick="appendToDisplay('2')">2</button>
+            <button class="numbers" onclick="appendToDisplay('3')">3</button>
+            <button class="operators" onclick="appendToDisplay('+')">+</button>
+            <button class="numbers" id="zero" onclick="appendToDisplay('0')">0</button>
+            <button class="numbers" onclick="appendToDisplay('.')">.</button>
+            <button class="operators" onclick="evaluateDisplay()">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

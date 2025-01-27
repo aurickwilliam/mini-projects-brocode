@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main{
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-cont{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#title-cont p{
+    font-size: 2.5em;
+    color: #393939;
+}
+
+#title-cont p span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #DADADA;
+}
+
+#game-cont{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#computer-score-cont{
+    background-color: #393939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #393939;
+    gap: 20px;
+}
+
+#computer-score{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+    color: #393939;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+}
+
+#computer-score-cont i{
+    font-size: 5em;
+    width: 100px;
+    text-align: center;
+}
+
+#user-score-cont{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #DADADA;
+    gap: 20px;
+}
+
+#user-score{
+    font-family: "Montserrat", sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #393939;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+}
+
+#user-score-cont i{
+    font-size: 5em;
+    width: 100px;
+    text-align: center;
+}
+
+#computer-pick-cont i, #user-pick-cont i{
+    display: none;
+    font-size: 7em;
+}
+
+#result-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#result{
+    font-family: "Montserrat", sans-serif;
+    color: #393939;
+    display: none;
+}
+
+#againBtn{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #393939;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#againBtn:hover{
+    background-color: #494949;
+}
+
+#hands-cont{
+    background-color: #fff;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 2px solid #DADADA;
+}
+
+#instruction{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #393939;
+    margin-bottom: 20px
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hands{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid #DADADA;
+    transition: 0.2s ease-in-out;
+}
+
+.hands i{
+    font-size: 7em;
+    color: #DADADA;
+}
+
+.hover:hover{
+    cursor: pointer;
+    border: 2px solid #393939;
+}
+
+.hover:hover i{
+    cursor: pointer;
+    color: #393939;
+}
+
+.active{
+    background-color: #393939;
+    border: 2px solid #393939;
+}
+
+.active > i{
+    color: #fff;
+}
+

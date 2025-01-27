@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+#container #title{
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+#container #from-container{
+    display: flex;
+    gap: 5px;
+    width: 300px;
+}
+
+#container #from-container #from-type{
+    background-color: #393939;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #393939;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#container #from-container #from-type:hover{
+    background-color: #494949;
+}
+
+#container #from-container #user-input{
+    border-radius: 5px;
+    border: 3px solid #393939;
+    width: 100%;
+    padding-left: 5px;
+    color: #393939;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/* ! Remove the up and down arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#container #convert{
+    background-color: #393939;
+    width: 300px;
+    margin-top:10px;
+    height: 45px;
+    border-radius: 5px;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#container #convert:hover{
+    background-color: #494949;
+}
+
+#container #to-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+    width: 300px;
+    color: #393939;
+    gap: 1em;
+}
+
+#container #to-container h3{
+    font-size: 1.5em;
+}

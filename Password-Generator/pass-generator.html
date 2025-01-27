@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc53451b7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <h1>Password Generator</h1>
+        <div id="input-container">
+            <label for="length">Length:</label><br>
+            <input type="number" name="length" id="length" min="1" max="30" value="8">
+            <br>
+
+            <h3>Options:</h3>
+            <hr>
+            <label for="isLowercase" class="checkbox-container">
+                <input type="checkbox" name="isLowercase" id="isLowercase" checked>
+                Lowercase
+            </label>
+
+            <label for="isUppercase" class="checkbox-container">
+                <input type="checkbox" name="isUppercase" id="isUppercase">
+                Uppercase
+            </label>
+
+            <label for="isNumber" class="checkbox-container">
+                <input type="checkbox" name="isNumber" id="isNumber">
+                Numbers
+            </label>
+
+            <label for="isSymbol" class="checkbox-container">
+                <input type="checkbox" name="isSymbol" id="isSymbol">
+                Symbols
+            </label>
+
+            <button id="generateBtn" onclick="generatePassword()">Generate</button>
+        </div>
+
+        <div id="result-container">
+            <input type="text" id="result-label" value="..." readonly>
+            <button id="copyBtn" onclick="copyPassword()">
+                <i class="fa-regular fa-copy" style="color: #FAFAFA;"></i>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

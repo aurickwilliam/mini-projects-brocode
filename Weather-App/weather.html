@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang buhay ay Weather-Weather Lamang!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc53451b7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="search-cont">
+            <div id="search">
+                <input type="text" placeholder="City Name..." id="search-box">
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </button>
+            </div>
+            <p id="error-message">
+                Invalid City Name
+            </p>
+        </div>
+        <div id="weather-cont">
+            <div id="main-weather">
+                <div id="image-cont">
+                    <img alt="weather" id="weather-img">
+                </div>
+                <p id="temp">
+                    22 C
+                </p>
+            </div>
+
+            <div id="vertical-div"></div>
+
+            <div id="info-weather">
+                <div id="city-cont">
+                    <p id="city">
+                        San Francisco
+                    </p>
+                    <p id="description">
+                        Aigoo
+                    </p>
+                </div>
+
+                <div id="horizontal-div"></div>
+
+                <div id="info-cont">
+                    <div id="wind-cont" class="info"> 
+                        <i class="fa-solid fa-wind" style="color: #80cdf6;"></i>
+                        <p class="title">Wind</p>
+                        <p id="wind">4.9 m/s</p>
+                    </div>
+                    <div id="humidity-cont" class="info">
+                        <i class="fa-solid fa-water" style="color: #80cdf6;"></i>
+                        <p class="title">Humidity</p>
+                        <p id="humidity">81%</p>
+                    </div>
+                    <div id="mintemp-cont" class="info">
+                        <i class="fa-solid fa-temperature-low" style="color: #80cdf6;"></i>
+                        <p class="title">Min. Temp</p>
+                        <p id="mintemp">20C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

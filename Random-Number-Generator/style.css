@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #393939;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 2em;
+    background-color: #f1f1f1;
+}
+
+#container #title{
+    font-size: 2em;
+}
+
+#container #num-container{
+    font-size: 5em;
+}
+
+#container #random-btn{
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: #393939;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+#container #random-btn:hover{
+    background-color: #494949;
+}
+
+#val-container{
+    background-color: #393939;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    gap: 0.5em;
+}
+
+#val-container input{
+    width: 25%;
+    border: none;
+    padding: 5px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#val-container input:focus{
+    outline: none;
+}
+
+/* ! Remove the up and down arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

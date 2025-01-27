@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="counter-container">
+            0
+        </h1>
+        <div id="btn-container">
+            <button id="decrease-btn">-</button>
+            <button id="reset-btn">reset</button>
+            <button id="increase-btn">+</button>
+        </div>
+    </div>
+
+    <script>
+        const counter = document.getElementById('counter-container');
+        const decreaseBtn = document.getElementById('decrease-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const increaseBtn = document.getElementById('increase-btn');
+
+        let count = 0;
+
+        increaseBtn.onclick = () => {
+            count++;
+            counter.textContent = count;
+        };
+
+        decreaseBtn.onclick = () => {
+            count--;
+            counter.textContent = count;
+        };
+
+        resetBtn.onclick = () => {
+            count = 0;
+            counter.textContent = count;
+        };
+    </script>
+
+</body>
+</html>

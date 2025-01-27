@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Random Number Generator</h1>
+        <h2 id="num-container">0</h2>
+        <div id="val-container">
+            <input type="number" name="minimum" id="minimum" value="0">
+            <button id="random-btn">Generate</button>
+            <input type="number" name="maximum" id="maximum" value="100">
+        </div>
+    </div>
+    <script>
+        const number = document.getElementById("num-container");
+        const randomBtn = document.getElementById("random-btn");
+        const minimum = document.getElementById("maximum");
+        const maximum = document.getElementById("minimum");
+
+        randomBtn.onclick = () => {
+            let MAX_VAL = Number(maximum.value);
+            let MIN_VAL = Number(minimum.value);
+            let randomNum = Math.floor(Math.random() * (MAX_VAL - MIN_VAL)) + MIN_VAL;
+            number.textContent = randomNum;
+        };
+    </script>
+</body>
+</html>
